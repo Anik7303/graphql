@@ -55,7 +55,7 @@ app.use((err, req, res, next) => {
 // connect mongodb atlas
 mongoose
     .connect(keys.MONGODB_URI, dbConfigs)
-    .then((result) => console.log({ mongoConnectResult: result }));
+    .catch((err) => console.error(err));
 
 app.listen(keys.PORT, () => {
     console.log(`server running on port ${keys.PORT}`);

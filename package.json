@@ -1,7 +1,7 @@
 {
-    "name": "graphql-test",
+    "name": "graphql",
     "version": "1.0.0",
-    "description": "graphql configuration testing",
+    "description": "graphql tryout project",
     "main": "index.js",
     "engines": {
         "npm": "7.5.2",
@@ -15,7 +15,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/Anik7303/graphql-test.git"
+        "url": "git+ssh://git@github.com/Anik7303/graphql.git"
     },
     "keywords": [
         "GraphQL",
@@ -24,9 +24,9 @@
     "author": "Anik Mohammad <anik7303@gmail.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Anik7303/graphql-test/issues"
+        "url": "https://github.com/Anik7303/graphql/issues"
     },
-    "homepage": "https://github.com/Anik7303/graphql-test#readme",
+    "homepage": "https://github.com/Anik7303/graphql#readme",
     "dependencies": {
         "bcryptjs": "^2.4.3",
         "cors": "^2.8.5",
