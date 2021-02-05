@@ -1,11 +1,24 @@
 const express = require('express');
 const cors = require('cors');
+const mongoose = require('mongoose');
 const { graphqlHTTP } = require('express-graphql');
+const multer = require('multer');
 
+// mongoose model declairations
+require('./models/User');
+require('./models/Post');
 // keys
 const keys = require('./keys');
 // graphql schema, resolvers and error function
 const { schema, resolvers, customErrorFunction } = require('./graphql');
+
+// variables
+const dbConfigs = {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+    useCreateIndex: true,
+};
 
 const app = express();
 
@@ -38,6 +51,11 @@ app.use((err, req, res, next) => {
     err.code = err.code || 500;
     console.error({ err });
 });
+
+// connect mongodb atlas
+mongoose
+    .connect(keys.MONGODB_URI, dbConfigs)
+    .then((result) => console.log({ mongoConnectResult: result }));
 
 app.listen(keys.PORT, () => {
     console.log(`server running on port ${keys.PORT}`);
