@@ -1,0 +1,40 @@
+{
+    "name": "graphql-test",
+    "version": "1.0.0",
+    "description": "graphql configuration testing",
+    "main": "index.js",
+    "engines": {
+        "npm": "7.5.2",
+        "node": "14.15.4"
+    },
+    "type": "commonjs",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/Anik7303/graphql-test.git"
+    },
+    "keywords": [
+        "GraphQL",
+        "Express"
+    ],
+    "author": "Anik Mohammad <anik7303@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Anik7303/graphql-test/issues"
+    },
+    "homepage": "https://github.com/Anik7303/graphql-test#readme",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-graphql": "^0.12.0",
+        "graphql": "^15.5.0",
+        "mongoose": "^5.11.15",
+        "multer": "^1.4.2",
+        "nodemon": "^2.0.7"
+    }
+}
